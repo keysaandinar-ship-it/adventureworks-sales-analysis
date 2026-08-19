@@ -4,7 +4,7 @@ Proyek *end-to-end data analytics* yang menganalisis tren penjualan, dinamika pe
 
 ---
 
-## 📌 Ringkasan Eksekutif
+## 📌 Ringkasan
 
 Analisis ini bertujuan untuk memberikan gambaran menyeluruh mengenai efisiensi operasional dan kinerja keuangan AdventureWorks. Dengan mengevaluasi lebih dari **25 ribu transaksi** dan **84 ribu unit produk terjual**, proyek ini mengidentifikasi pola pertumbuhan penjualan, tingkat retensi pembeli, kombinasi *cross-selling* antar kategori produk, serta potensi risiko pada rantai pasok dan kualitas barang untuk mendukung pengambilan keputusan bisnis yang berbasis data (*data-driven decision making*).
 
