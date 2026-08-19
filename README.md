@@ -21,6 +21,7 @@ Analisis ini bertujuan untuk memberikan gambaran menyeluruh mengenai efisiensi o
 
 ## 📁 Struktur Repositori
 
+
 ```text
 adventureworks-sales-analysis/
 │
@@ -43,9 +44,11 @@ adventureworks-sales-analysis/
 │
 └── README.md
 
+
 ---
 
-**📊 Indikator Kinerja Utama (KPIs)**
+
+## 📊 Indikator Kinerja Utama (KPIs)
 | Metrik Utama | Nilai | Deskripsi |
 | :--- | :---: | :--- |
 | **Total Revenue** | `$24,914,586.82` | Total pendapatan kotor dari seluruh transaksi |
@@ -56,9 +59,11 @@ adventureworks-sales-analysis/
 | **Total Customers** | `17,416` | Jumlah total pelanggan unik (*active buyers*) |
 | **Overall Return Rate** | `2.17%` | Total retur 1,828 unit dari 84,174 unit terjual |
 
+
 ---
 
-**🖼️ Tampilan Dashboard Interaktif**
+
+## 🖼️ Tampilan Dashboard Interaktif
 ### 1. Sales Performance Overview
 ![Sales Overview](images/SALES_OVERVIEW.png)
 Halaman ini menyajikan visualisasi makro terkait pencapaian omzet harian, tren pertumbuhan bulanan, serta kontribusi pendapatan berdasarkan wilayah geografis.
@@ -70,6 +75,10 @@ Halaman ini berfokus pada segmentasi pembeli, tingkat retensi pembeli berulang (
 ### 3. Product Performance & Risk Evaluation
 ![Product Performance](images/PRODUCT_PERFORMANCE.png)
 Halaman ini mendeteksi profitabilitas per lini produk, volume penjualan barang, serta daftar produk yang memiliki angka retur tinggi.
+
+
+---
+
 
 ## 🔍 Temuan Analisis Mendetail
 
