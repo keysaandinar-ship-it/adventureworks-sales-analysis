@@ -44,9 +44,7 @@ adventureworks-sales-analysis/
 │
 └── README.md
 
-
 ---
-
 
 ## 📊 Indikator Kinerja Utama (KPIs)
 | Metrik Utama | Nilai | Deskripsi |
