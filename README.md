@@ -63,15 +63,15 @@ adventureworks-sales-analysis/
 
 ## 🖼️ Tampilan Dashboard Interaktif
 ### 1. Sales Performance Overview
-![Sales Overview](images/SALES_OVERVIEW.png)
+![Sales Overview](Images/SALES_OVERVIEW.png)
 Halaman ini menyajikan visualisasi makro terkait pencapaian omzet harian, tren pertumbuhan bulanan, serta kontribusi pendapatan berdasarkan wilayah geografis.
 
 ### 2. Customer Insights & Behavioral Analytics
-![Customer Performance](images/CUSTOMER_PERFORMANCE.png)
+![Customer Performance](Images/CUSTOMER_PERFORMANCE.png)
 Halaman ini berfokus pada segmentasi pembeli, tingkat retensi pembeli berulang (repeat customers), dan peta kombinasi kategori produk yang diminati pelanggan.
 
 ### 3. Product Performance & Risk Evaluation
-![Product Performance](images/PRODUCT_PERFORMANCE.png)
+![Product Performance](Images/PRODUCT_PERFORMANCE.png)
 Halaman ini mendeteksi profitabilitas per lini produk, volume penjualan barang, serta daftar produk yang memiliki angka retur tinggi.
 
 
@@ -84,14 +84,10 @@ Halaman ini mendeteksi profitabilitas per lini produk, volume penjualan barang, 
 * **Peningkatan Pendapatan Drastis:** Perbandingan kinerja pada Semester Pertama (Januari–Juni) antara tahun 2021 dan 2022 mencatatkan lonjakan omzet yang sangat signifikan sebesar **+211,07%**, meningkat dari `$2.952.867,55` (H1 2021) menjadi `$9.185.449,45` (H1 2022).
 * **Ekspansi Volume Barang:** Pertumbuhan omzet ini berbanding lurus dengan kenaikan volume penjualan fisik pada H1, yang melesat dari **1.706 unit** (2021) menjadi **45.314 unit** (2022). Kenaikan kuantitas ini didorong secara dominan oleh penetrasi produk kategori *Accessories*.
 
----
-
 ### 2. Peran Kategori Produk: Revenue Engine vs Volume Driver
 * **Kategori Sepeda (*Bikes*) sebagai Revenue Engine:** Kategori *Bikes* merupakan penyumbang pendapatan terbesar bagi perusahaan dengan nilai **$23.642.495,10** (94,9% dari total omzet). Masing-masing unit memiliki nilai jual rata-rata (*Average Selling Price*) yang tinggi sebesar **$1.697,36** per unit.
 * **Kategori Aksesoris (*Accessories*) sebagai Volume Driver:** Kategori *Accessories* mendominasi volume kuantitas penjualan dengan porsi **68,7%** dari seluruh unit terjual (57.809 unit), meskipun harga jual rata-ratanya relatif terjangkau (**$15,68** per unit). Kategori ini berfungsi efektif sebagai produk pintu masuk (*entry product*) untuk menjangkau pelanggan baru.
 * **Konsentrasi Risiko Produk Unggulan (*Hero Product Risk*):** Lini produk sepeda seri **Mountain-200** secara mandiri menyumbang **$7.170.946,50** atau menyerap sekitar **29%** dari total seluruh omzet perusahaan. Ketergantungan pada satu seri produk ini memerlukan perhatian khusus pada ketersediaan stok rantai pasok.
-
----
 
 ### 3. Analisis Retensi Pelanggan & Pola Belanja Silang (Cross-Selling)
 * **Portofolio Pelanggan yang Sehat:** Top 10 pelanggan terbesar hanya berkontribusi sebesar **0,44%** ($110.268,65) terhadap total pendapatan kotor. Hal ini menunjukkan struktur bisnis yang sangat aman karena tidak bergantung pada segmen pembeli tunggal atau kelompok pembeli tertentu.
@@ -100,8 +96,6 @@ Halaman ini mendeteksi profitabilitas per lini produk, volume penjualan barang, 
   * **4.421 pelanggan** tercatat membeli kombinasi kategori `Bikes + Accessories`.
   * **2.599 pelanggan** bertransaksi untuk kombinasi `Accessories + Clothing`.
   * **1.982 pelanggan** melakukan pembelian komprehensif pada ketiga kategori sekaligus (`Bikes + Accessories + Clothing`).
-
----
 
 ### 4. Evaluasi Kualitas Produk & Risiko Pengembalian Barang (Return Analysis)
 Meskipun rata-rata retur keseluruhan bisnis berada pada angka yang relatif sehat (**2,17%**), analisis mendalam pada produk dengan volume penjualan di atas 100 unit menemukan beberapa item dengan tingkat pengembalian barang yang cukup tinggi (di atas 5%):
