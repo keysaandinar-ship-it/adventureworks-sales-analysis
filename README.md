@@ -21,7 +21,6 @@ Analisis ini bertujuan untuk memberikan gambaran menyeluruh mengenai efisiensi o
 
 ## 📁 Struktur Repositori
 
-
 ```text
 adventureworks-sales-analysis/
 │
