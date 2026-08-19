@@ -64,14 +64,17 @@ adventureworks-sales-analysis/
 ## 🖼️ Tampilan Dashboard Interaktif
 ### 1. Sales Performance Overview
 ![Sales Overview](Images/SALES_OVERVIEW.png)
+
 Halaman ini menyajikan visualisasi makro terkait pencapaian omzet harian, tren pertumbuhan bulanan, serta kontribusi pendapatan berdasarkan wilayah geografis.
 
 ### 2. Customer Insights & Behavioral Analytics
 ![Customer Performance](Images/CUSTOMER_PERFORMANCE.png)
+
 Halaman ini berfokus pada segmentasi pembeli, tingkat retensi pembeli berulang (repeat customers), dan peta kombinasi kategori produk yang diminati pelanggan.
 
 ### 3. Product Performance & Risk Evaluation
 ![Product Performance](Images/PRODUCT_PERFORMANCE.png)
+
 Halaman ini mendeteksi profitabilitas per lini produk, volume penjualan barang, serta daftar produk yang memiliki angka retur tinggi.
 
 
@@ -133,6 +136,37 @@ SELECT
     TotalUnits,
     ROUND((Revenue - LAG(Revenue) OVER (ORDER BY SalesYear)) * 100.0 / LAG(Revenue) OVER (ORDER BY SalesYear), 2) AS RevenueGrowthPct
 FROM SalesH1;
+```
+
+### 2. Segmen Pembelian Silang Antar-Kategori *(Cross-Sellling)*
+> Kueri ini menggunakan teknik agregasi kondisional **MAX(CASE...)** untuk memetakan kombinasi kategori barang yang dibeli oleh setiap pelanggan unik.
+
+```sql
+WITH CustomerCategoryPurchase AS (
+    SELECT 
+        S.CustomerKey,
+        MAX(CASE WHEN C.CategoryName = 'Bikes' THEN 1 ELSE 0 END) AS HasBikes,
+        MAX(CASE WHEN C.CategoryName = 'Accessories' THEN 1 ELSE 0 END) AS HasAccessories,
+        MAX(CASE WHEN C.CategoryName = 'Clothing' THEN 1 ELSE 0 END) AS HasClothing
+    FROM Sales AS S
+    JOIN AdventureWorks_Product_Lookup AS P ON P.ProductKey = S.ProductKey
+    JOIN AdventureWorks_Product_Subcategories_Lookup AS SC ON P.ProductSubcategoryKey = SC.ProductSubcategoryKey
+    JOIN AdventureWorks_Product_Categories_Lookup AS C ON SC.ProductCategoryKey = C.ProductCategoryKey
+    GROUP BY S.CustomerKey
+)
+SELECT 
+    CASE 
+        WHEN HasBikes=1 AND HasAccessories=1 AND HasClothing=1 THEN 'Bikes + Accessories + Clothing'
+        WHEN HasBikes=1 AND HasAccessories=1 THEN 'Bikes + Accessories'
+        WHEN HasBikes=1 AND HasClothing=1 THEN 'Bikes + Clothing'
+        WHEN HasAccessories=1 AND HasClothing=1 THEN 'Accessories + Clothing'
+        ELSE 'Single Category Only'
+    END AS CrossCategorySegment,
+    COUNT(*) AS TotalCustomers
+FROM CustomerCategoryPurchase
+GROUP BY CrossCategorySegment
+ORDER BY TotalCustomers DESC;
+```
 
 ---
 
