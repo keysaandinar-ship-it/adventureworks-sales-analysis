@@ -42,6 +42,7 @@ adventureworks-sales-analysis/
 │   └── 04_product_returns.sql
 │
 └── README.md
+```
 
 ---
 
